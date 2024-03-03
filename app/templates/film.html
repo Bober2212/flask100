@@ -1,0 +1,15 @@
+{%extends 'baze.html' %}
+{% block content%}
+    <img class="images" src="{{film.image_film}}">
+<div class="colortextfilm">
+    <h1>Текст:  {{film.text}}</h1>
+    <h1>Назва_фільму:  {{film.film_name}}</h1>
+    <h1>Головні_герої:  {{film.protagonists}}</h1>
+    <h1>Жанр:  {{film.genre}}</h1>
+    <h1>Рік_випуску:  {{film.graduation_year}}</h1>
+    <h1>Рейтинг:  {{film.rating}}</h1>
+    <h1>Країна:  {{film.country}}</h1>
+    <h1>Час_фільму:  {{film.time}}</h1>
+
+</div>
+{%endblock%}

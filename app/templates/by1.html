@@ -1,0 +1,13 @@
+{%extends 'baze.html' %}
+{% block content%}
+
+<form method="post">
+    {{form.hidden_tag()}}
+    <p class="colortext">купівля пакету на 499грн</p>
+    <p class="colortext">заповніть дані для оплати</p>
+    <p class="colortext">{{form.username.label}} {{form.username(size=30)}}</p>
+    <p class="colortext">{{form.bankcard.label}} {{form.bankcard(size=30)}}</p>
+    <p class="colortext">{{form.submit.label}} {{form.submit(size=30)}}</p>
+
+</form>
+{%endblock%}

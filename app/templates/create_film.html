@@ -1,0 +1,18 @@
+{%extends 'baze.html' %}
+{% block content%}
+    <link href="/static/home.css" rel="stylesheet">
+<form method="post" enctype="multipart/form-data">
+    {{form.hidden_tag()}}
+    <p class="colortext">{{form.text.label}} {{form.text(size=30)}}</p>
+    <p class="colortext">{{form.image_film.label}} {{form.image_film(size=30)}}</p>
+    <p class="colortext">{{form.film_name.label}} {{form.film_name(size=30)}}</p>
+    <p class="colortext">{{form.protagonists.label}} {{form.protagonists(size=30)}}</p>
+    <p class="colortext">{{form.genre.label}} {{form.genre(size=30, class_="button") }}</p>
+    <p class="colortext">{{form.graduation_year.label}} {{form.graduation_year(size=30,class_="button")}}</p>
+    <p class="colortext">{{form.rating.label}} {{form.rating(size=30, class_="button")}}</p>
+    <p class="colortext">{{form.country.label}} {{form.country(size=30)}}</p>
+    <p class="colortext">{{form.time.label}} {{form.time(size=30)}}</p>
+    <p class="colortext">{{form.submit.label}} {{form.submit(size=30)}}</p>
+    <p class="colortext">{{text}}</p>
+</form>
+{%endblock%}

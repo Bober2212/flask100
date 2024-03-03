@@ -1,0 +1,16 @@
+{%extends 'baze.html' %}
+{% block content%}
+
+    <center><h1 class="namecite1">MovieVibe</h1></center>
+    {%for i in image%}
+    <a href="/Film{{i.id}}" ><img class="image"  src="{{i.image_film}}"></a>
+{%endfor%}
+<form class="top "   method="post">
+     {{form.hidden_tag()}}
+
+    <p class="colortext">{{form.graduation_year.label}} {{form.graduation_year(size=30,class_="button")}}</p>
+    <p class="colortext">{{form.rating.label}} {{form.rating(size=30, class_="button")}}</p>
+    <p class="colortext">{{form.genre.label}} {{form.genre(size=30, class_="button") }}</p>
+    <p class="colortext">{{form.submit.label}} {{form.submit(size=30)}}</p>
+    </form>
+{%endblock%}
